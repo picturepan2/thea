@@ -1,0 +1,352 @@
+/*! Thea | MIT License | github.com/picturepan2/thea */
+// Variables
+@import "variables";
+
+// Core
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+// Reset
+a {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// Header & Footer
+.phantom-header {
+  background: $light-color;
+  border-bottom: 1px solid $bg-color;
+  height: 3rem;
+  
+  .logo {
+    color: $dark-color;  
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: none;
+  }
+}
+
+.navbar {
+  height: 3rem;
+  padding: .5rem 0;
+
+  .nav {
+    flex-direction: row;
+
+    .nav-item {
+      margin-top: 0;
+    }
+
+    .nav-current {
+      & {
+        a {
+          border-bottom: 2px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+
+    a {
+      color: $font-color;
+      font-weight: 700;
+      margin: 0 .3rem;
+      padding: .3rem .1rem;
+
+      &:focus,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .social-link,
+  .rss-button {
+    height: 1.2rem;
+    margin-left: .6rem;
+    width: 1.2rem;
+  }
+}
+
+.phantom-footer {
+  color: $gray-color;
+  margin-top: .1rem;
+  opacity: .65;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  a {
+    color: $font-color;
+  }
+
+  .footer-nav {
+    margin-bottom: 1rem;
+  }
+}
+
+// Meta
+.phantom-meta {
+  margin-bottom: 2px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+
+  .meta-title {
+    color: $dark-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .meta-description {
+    font-size: .7rem;
+  }
+
+  .meta-avatar {
+    margin-bottom: .5rem;
+  }
+
+  .meta-profile {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  .meta-stats,
+  .meta-location {
+    display: inline-block;
+    height: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .social-link {
+    display: inline-block;
+    height: 1.2rem;
+    margin: 0 .3rem;
+    width: 1.2rem;
+  }
+
+  .divider-dot {
+    margin: 0 .2rem;
+  }
+}
+
+// Feed
+.phantom-body {
+  background: $bg-color;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  .columns {
+    margin-left: -.8rem;
+    margin-right: -.8rem;
+
+    .column {
+      padding: .8rem .8rem;
+    }
+  }
+
+  .card {
+    border: 0;
+    border-radius: $border-radius;
+    box-shadow: 0 .05rem 1rem rgba(#333, .05);
+    height: 100%;
+    transition: all .35s ease;
+
+    &:hover {
+      box-shadow: 0 .3rem 1rem rgba(#333, .25);
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      flex: 1 1 auto;
+    }
+
+    .post-card-image {
+      background-position: center center;
+      background-size: cover;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      height: 0;
+      padding-bottom: 60%;
+      width: 100%;
+    }
+
+    .post-card-title {
+      display: -webkit-box;
+      font-size: .9rem;
+      font-weight: 500;
+      height: 3.75rem;
+      line-height: 1.25rem;
+      margin-bottom: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .post-card-date {
+      opacity: .5;
+    }
+
+    .card-link {
+      box-shadow: none;
+      color: $font-color;
+
+      &:focus,
+      &:hover {
+        color: $dark-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .pagination {
+    justify-content: center;
+
+    a {
+      color: $font-color;
+
+      &:focus,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .empty {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+
+    .empty-title {
+      color: lighten($gray-color, 15%);
+      font-size: 10vw;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .empty-subtitle {
+      color: lighten($gray-color, 0%);
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+  }
+}
+
+// Post
+.phantom-post {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.post-full {
+  letter-spacing: -.021em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+
+  .post-full-image {
+    margin: 1.5rem -2.4rem;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .post-full-title {
+    color: $dark-color;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .post-full-meta {
+    color: $gray-color;
+
+    a {
+      color: $gray-color;
+
+      &:focus,
+      &:hover {
+        color: $font-color;
+      }
+    }
+  }
+
+  .post-full-content {
+    color: $font-color;
+    font-size: .8rem;
+    margin: 1.2rem 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1.2rem;
+      margin-top: 1.2rem;
+    }
+  
+    p {
+      line-height: 1.6;
+      margin: 1.2rem 0;
+    }
+  
+    hr {
+      border: 0;
+      height: .1rem;
+      margin: 1.5rem 0;
+      position: relative;
+  
+      &::before {
+        background: $font-color;
+        content: "";
+        display: inline-block;
+        height: .1rem;
+        left: 50%;
+        margin-left: -1rem;
+        position: absolute;
+        top: 50%;
+        width: 2rem;
+      }
+    }
+  }
+
+  .post-full-tags {
+    .tags {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+      }
+
+      .tag {
+        padding: .4rem;
+
+        &:focus,
+        &:hover {
+          background: rgba($primary-color, .05);
+          text-decoration: none;
+        }
+      }
+    }
+
+    & + .post-full-title {
+      margin-top: 1rem;
+    }
+  }
+}
