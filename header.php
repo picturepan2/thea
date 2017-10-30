@@ -24,7 +24,7 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </div>
         <div class="navbar-center">
-          
+          <!-- Menu -->
         </div>
         <div class="navbar-section">
           <a class="rss-button" href="<?php bloginfo('rss2_url'); ?>" target="_blank">

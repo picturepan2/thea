@@ -1,26 +1,30 @@
 <?php
 remove_action('wp_head', 'wp_generator');
+
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 function remove_comments_rss( $for_comments ) {
 	return;
 }
 add_filter('post_comments_feed_link','remove_comments_rss');
+
 function livesino_excerpt_length($length) {
 	return 90;
 }
 add_filter('excerpt_length', 'livesino_excerpt_length');
+
 function no_self_ping( &$links ) {
 	$home = get_option( 'home' );
 	foreach ( $links as $l => $link )
 		if ( 0 === strpos( $link, $home ) )
 			unset($links[$l]);
 }
+add_action('pre_ping', 'no_self_ping' );
+
 function new_excerpt_more($more) {
 	global $post;
 	return '<p><a href="'. get_permalink($post->ID) . '" class="more-link">阅读全文</a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-add_action('pre_ping', 'no_self_ping' );
 
 function utf8_trim($str) {
 	$len = strlen($str);
@@ -41,30 +45,7 @@ function annotation($content){
 	return $content;
 }
 add_filter('the_content', 'annotation');
-function archives_tiles(){
-	global $wpdb, $wp_locale;
-	$sql = 'select count(*) as num, month(post_date) as month, year(post_date) as year from ' . $wpdb->prefix . 'posts where post_type = "post" and post_status != "future" group by year(post_date), month(post_date) order by post_date DESC';
-	$months = $wpdb->get_results($sql);
-	$html = '<div class="archive-tiles">'. "\n";
-	foreach ($months as $month) {
-		$url = get_month_link($month->year, $month->month);
-		if($y != $month->year){
-		$y = $month->year;
-		$html .= '<span class="tiles block"><span class="year block">存档</span><span class="year block large">'. $y .'</span></span>' . "\n";
-		}
-		$html .= '<a href="'. $url .'" title="'. $month->year .' 年 '. $wp_locale->get_month($month->month) .' 存档 - 文章数 '. $month->num .'" class="tiles block"><span class="year block">'. $month->year .'</span><span class="year block large">'. $wp_locale->get_month($month->month) .'</span><span class="num block">'. $month->num .'</span></a>' . "\n";
-	}
-	$html .= "</div>\n";
-	echo $html;
-}
-function ignition_rel_replace($content){
-	global $post;
-	$pattern = "/<a(.*?)href=('|\")([^>]*).(gif|jpg|png)('|\")(.*?)>(.*?)<\/a>/i";
-	$replacement = '<a$1href=$2$3.$4$5 rel="ignition"$6>$7</a>';
-	$content = preg_replace($pattern, $replacement, $content);
-	return $content;
-}
-add_filter('the_content', 'ignition_rel_replace');
+
 function pagenavi(){
 	global $wp_query;
 	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -86,4 +67,13 @@ function pagenavi(){
 function pagenavi_link($page, $n) {
 	return '<a href="' . esc_url(get_pagenum_link($page)) . '" class="page-numbers">'.$n.'</a>';
 }
+
+// Thumbnails
+function prefix_remove_default_images( $sizes ) {
+  unset( $sizes['medium']); 
+  unset( $sizes['large']);
+}
+add_filter( 'intermediate_image_sizes_advanced', 'prefix_remove_default_images' );
+
+add_theme_support( 'post-thumbnails' );
 ?>

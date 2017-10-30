@@ -289,7 +289,7 @@ body {
   background: #fff;
   color: #50596c;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  font-size: .8rem;
+  font-size: .7rem;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
@@ -538,7 +538,7 @@ dl dd {
   color: #0145dd;
   cursor: pointer;
   display: inline-block;
-  font-size: .8rem;
+  font-size: .7rem;
   height: 1.8rem;
   line-height: 1rem;
   outline: none;
@@ -761,7 +761,7 @@ legend {
   border-radius: .2rem;
   color: #50596c;
   display: block;
-  font-size: .8rem;
+  font-size: .7rem;
   height: 1.8rem;
   line-height: 1rem;
   max-width: 100%;
@@ -842,7 +842,7 @@ textarea.form-input {
   border: .05rem solid #caced7;
   border-radius: .2rem;
   color: inherit;
-  font-size: .8rem;
+  font-size: .7rem;
   height: 1.8rem;
   line-height: 1rem;
   outline: none;
