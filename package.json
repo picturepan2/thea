@@ -1,0 +1,36 @@
+{
+  "name": "thea",
+  "version": "0.2.0",
+  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "description": "WordPress theme Thea",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/picturepan2/thea.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "news",
+    "blog"
+  ],
+  "bugs": {
+    "url": "https://github.com/picturepan2/thea/issues"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest"
+  },
+  "browserslist": [
+    "last 4 Chrome versions",
+    "Edge >= 12",
+    "Firefox ESR",
+    "last 4 Safari versions",
+    "last 4 Opera versions",
+    "Explorer >= 10"
+  ]
+}
