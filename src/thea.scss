@@ -17,7 +17,7 @@ a {
 }
 
 // Header & Footer
-.phantom-header {
+.thea-header {
   background: $light-color;
   border-bottom: 1px solid $bg-color;
   height: 3rem;
@@ -71,10 +71,9 @@ a {
   }
 }
 
-.phantom-footer {
+.thea-footer {
+  background: $bg-color;
   color: $gray-color;
-  margin-top: .1rem;
-  opacity: .65;
   padding-bottom: 2rem;
   padding-top: 2rem;
 
@@ -85,10 +84,14 @@ a {
   .footer-nav {
     margin-bottom: 1rem;
   }
+
+  .copyright {
+    line-height: 1.8;
+  }
 }
 
 // Meta
-.phantom-meta {
+.thea-meta {
   margin-bottom: 2px;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -135,7 +138,7 @@ a {
 }
 
 // Feed
-.phantom-body {
+.thea-body {
   background: $bg-color;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -238,12 +241,12 @@ a {
 }
 
 // Post
-.phantom-post {
+.thea-post {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.post-full {
+.post {
   letter-spacing: -.021em;
   margin-left: auto;
   margin-right: auto;
@@ -252,7 +255,7 @@ a {
   padding-right: 2rem;
   width: 100%;
 
-  .post-full-image {
+  .post-image {
     margin: 1.5rem -2.4rem;
     
     img {
@@ -261,13 +264,13 @@ a {
     }
   }
 
-  .post-full-title {
+  .post-title {
     color: $dark-color;
     font-size: 1.6rem;
     line-height: 1.4;
   }
 
-  .post-full-meta {
+  .post-meta {
     color: $gray-color;
 
     a {
@@ -280,7 +283,24 @@ a {
     }
   }
 
-  .post-full-content {
+  .post-meta-tags {
+    .tag {
+      margin-right: .2rem;
+      padding: .4rem;
+
+      &:focus,
+      &:hover {
+        background: rgba($primary-color, .05);
+        text-decoration: none;
+      }
+    }
+
+    & + .post-title {
+      margin-top: 1rem;
+    }
+  }
+
+  .post-content {
     color: $font-color;
     font-size: .8rem;
     margin: 1.2rem 0;
@@ -301,7 +321,7 @@ a {
     }
   
     p {
-      line-height: 1.6;
+      line-height: 1.8;
       margin: 1.2rem 0;
     }
   
@@ -324,29 +344,20 @@ a {
       }
     }
   }
+}
 
-  .post-full-tags {
-    .tags {
-      list-style: none;
-      margin: 0;
+// Comments
+.post-comments {
+  margin-top: 4rem;
+}
 
-      li {
-        display: inline-block;
-      }
+// Ads
+.thea-ad {
+  background: $bg-color;
+  padding: 1rem;
 
-      .tag {
-        padding: .4rem;
-
-        &:focus,
-        &:hover {
-          background: rgba($primary-color, .05);
-          text-decoration: none;
-        }
-      }
-    }
-
-    & + .post-full-title {
-      margin-top: 1rem;
-    }
+  .adsense {
+    line-height: 0;
+    text-align: center;
   }
 }

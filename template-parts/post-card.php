@@ -12,6 +12,6 @@
     </a>
   </div>
   <footer class="card-footer">
-    <time class="post-card-date" datetime="{{date format="YYYY-MM-DD"}}"><?php the_time('Y 年 n 月 j 日,  g:i A'); ?></time>
+    <time class="post-card-date"><?php the_time('Y 年 n 月 j 日,  g:i A'); ?></time>
   </footer>
 </article>

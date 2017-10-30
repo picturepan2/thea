@@ -1,5 +1,18 @@
 
+  <?php get_template_part( 'template-parts/post-ad'); ?>
+
+  <footer class="thea-footer">
+    <div class="container text-center">
+      <nav class="footer-nav">
+        
+      </nav>
+      <section class="copyright">&copy; 2007 - 2017 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> 保留一切权利</section>
+      <section class="copyright">Proudly published with <a href="https://wordpress.org/" target="_blank">WordPress</a>. Theme <a href="https://github.com/picturepan2/thea" target="_blank">Thea</a> made with <span class="text-error">&hearts;</span>. </section>
+      <?php if ( is_user_logged_in() ) {?><section class="copyright"><?php echo get_num_queries(); ?> Queries, <?php timer_stop(1); ?> Seconds</section><?php } ?>
+    </div>
+  </footer>
 </div>
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2702768-6']);

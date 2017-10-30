@@ -295,7 +295,7 @@ body {
 }
 
 a {
-  color: #5755d9;
+  color: #0145dd;
   outline: none;
   text-decoration: none;
 }
@@ -308,7 +308,7 @@ a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #4240d4;
+  color: #013dc4;
   text-decoration: underline;
 }
 
@@ -560,15 +560,15 @@ dl dd {
 
 .btn:focus,
 .btn:hover {
-  background: #f1f1fc;
-  border-color: #4b48d6;
+  background: #9fbcff;
+  border-color: #0140ce;
   text-decoration: none;
 }
 
 .btn:active,
 .btn.active {
-  background: #4b48d6;
-  border-color: #3634d2;
+  background: #0140ce;
+  border-color: #0138b4;
   color: #fff;
   text-decoration: none;
 }
@@ -589,21 +589,21 @@ dl dd {
 
 .btn.btn-primary {
   background: #0145dd;
-  border-color: #4b48d6;
+  border-color: #0140ce;
   color: #fff;
 }
 
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
-  background: #4240d4;
-  border-color: #3634d2;
+  background: #013dc4;
+  border-color: #0138b4;
   color: #fff;
 }
 
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background: #3a38d2;
-  border-color: #302ecd;
+  background: #013ab9;
+  border-color: #0135aa;
   color: #fff;
 }
 
@@ -615,14 +615,14 @@ dl dd {
 .btn.btn-link {
   background: transparent;
   border-color: transparent;
-  color: #5755d9;
+  color: #0145dd;
 }
 
 .btn.btn-link:focus,
 .btn.btn-link:hover,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  color: #4240d4;
+  color: #013dc4;
 }
 
 .btn.btn-sm {
@@ -1268,7 +1268,7 @@ input.disabled + .form-icon {
 }
 
 .label.label-secondary {
-  background: #f1f1fc;
+  background: #9fbcff;
   color: #0145dd;
 }
 
@@ -2215,13 +2215,13 @@ video.video-responsive::before {
 
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
-  background: #f1f1fc;
+  background: #9fbcff;
   color: #0145dd;
 }
 
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
-  background: #f1f1fc;
+  background: #9fbcff;
   color: #0145dd;
 }
 
@@ -2436,13 +2436,13 @@ video.video-responsive::before {
 
 .tab .tab-item a:focus,
 .tab .tab-item a:hover {
-  color: #5755d9;
+  color: #0145dd;
 }
 
 .tab .tab-item.active a,
 .tab .tab-item a.active {
   border-bottom-color: #0145dd;
-  color: #5755d9;
+  color: #0145dd;
 }
 
 .tab .tab-item.tab-action {
@@ -2674,12 +2674,12 @@ a.text-primary:hover {
 }
 
 .text-secondary {
-  color: #e5e5f9;
+  color: #8fb2fe;
 }
 
 a.text-secondary:focus,
 a.text-secondary:hover {
-  color: #d1d0f4;
+  color: #76a0fe;
 }
 
 .text-gray {
@@ -2732,7 +2732,7 @@ a.text-error:hover {
 }
 
 .bg-secondary {
-  background: #f1f1fc;
+  background: #9fbcff;
 }
 
 .bg-dark {

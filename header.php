@@ -16,8 +16,8 @@
 </head>
 <!-- TradeDoubler site verification 2825512 -->
 <body>
-<div class="phantom">
-  <div class="phantom-header">
+<div class="thea">
+  <div class="thea-header">
     <div class="container">
       <div class="navbar">
         <div class="navbar-section">
@@ -26,7 +26,7 @@
         <div class="navbar-center">
           <!-- Menu -->
         </div>
-        <div class="navbar-section">
+        <div class="navbar-section"> 
           <a class="rss-button" href="<?php bloginfo('rss2_url'); ?>" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/rss.svg">
           </a>
@@ -34,4 +34,4 @@
       </div>
     </div>
   </div>
-
+  <?php get_template_part( 'template-parts/post-ad'); ?>

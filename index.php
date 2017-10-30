@@ -1,6 +1,11 @@
 <?php get_header(); ?>
+<?php 
+  query_posts(array( 
+    'post_type' => array('post', 'news')
+  ));  
+?>
 
-<main class="phantom-body" role="main">
+<main class="thea-body" role="main">
   <div class="container">
     <?php if (have_posts()) : ?>
       <div class="columns">
@@ -15,7 +20,7 @@
           <?php pagenavi(); ?>
         </div>
       </div>
-    <?php else : ?>
+    <?php else: ?>
       <div class="fuss nova">内容不存在。</div>
     <?php endif; ?>
   </div>

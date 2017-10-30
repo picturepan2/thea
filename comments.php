@@ -1,12 +1,12 @@
 <?php
-if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-die ('Please do not load this page directly. Thanks!');
-if ( post_password_required() ) { ?>
-<div class="fuss nova">该文章设置了密码保护。请先输入密码再查看评论。</div> 
-<?php
-return;
-}
-?>
+  if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+  die ('Please do not load this page directly. Thanks!');
+  if ( post_password_required() ) { ?>
+  <div class="fuss nova">该文章设置了密码保护。请先输入密码再查看评论。</div> 
+  <?php
+  return;
+  }
+  ?>
 <?php function livesino_comment($comment, $args, $depth) {
 $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class('pr'); ?> id="comment-<?php comment_ID() ?>">
@@ -39,13 +39,13 @@ $GLOBALS['comment'] = $comment; ?>
 <?php endif; ?>
 <?php if ( comments_open() ) : ?>
 <div id="respond">
-<span class="comments-title">发表评论</span>
+<h4 class="comments-title">发表评论</h4>
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 <div class="fuss nova">您必须<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">登录</a>后才能发表评论。</div>
 <?php else : ?>
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform" class="comment-form">
 <?php if ( is_user_logged_in() ) : ?>
-<div class="iris nova">您现在以 <a href="<?php echo get_option('siteurl'); ?>/wp-admin/"><?php echo $user_identity; ?></a> 的身份登录。<?php wp_loginout(); ?></div>
+<p>您现在以 <a href="<?php echo get_option('siteurl'); ?>/wp-admin/"><?php echo $user_identity; ?></a> 的身份登录。<?php wp_loginout(); ?></p>
 <?php else : ?>
 <div class="visitor gravatar right"><a href="http://www.gravatar.com/" rel="external nofollow" target="_blank" title="设置您的 Gravatar 头像"><?php echo get_avatar( esc_attr($comment_author_email), 40, 'http://livesino.net/wp-content/themes/h/images/anonymous.gif' ); ?></a></div>
 <p><input type="text" name="author" id="author" class="form-input" value="<?php echo esc_attr($comment_author); ?>" size="45" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?>/>
@@ -56,9 +56,9 @@ $GLOBALS['comment'] = $comment; ?>
 <label for="url"><span class="comment-label">网址 <span class="opt">(选填)</span></span></label></p>
 <?php endif; ?>
 <?php do_action('comment_form', $post->ID); ?>
-<p><textarea name="comment" id="comment" class="form-textarea" cols="58" rows="7" tabindex="4"></textarea></p>
-<p><input name="submit" type="submit" id="submit" class="form-btn left" tabindex="5" value="发表评论" />
-<span id="cancel-comment-reply" class="form-cancel left"><?php cancel_comment_reply_link('取消回复') ?></span>
+<p><textarea name="comment" id="comment" class="form-input" rows="5" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" class="btn btn-primary" tabindex="5" value="发表评论" />
+<span id="cancel-comment-reply" class="btn btn-link"><?php cancel_comment_reply_link('取消回复') ?></span>
 <div class="clear"></div>
 <?php comment_id_fields(); ?>
 </p>

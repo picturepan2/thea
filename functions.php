@@ -76,4 +76,35 @@ function prefix_remove_default_images( $sizes ) {
 add_filter( 'intermediate_image_sizes_advanced', 'prefix_remove_default_images' );
 
 add_theme_support( 'post-thumbnails' );
+
+// New post type
+function thea_register_my_post_type() {
+  $labels = array(
+    "name" => __( "News", "" ),
+    "singular_name" => __( "News", "" ),
+  );
+
+  $args = array(
+    "label" => __( "News", "" ),
+    "labels" => $labels,
+    "description" => "",
+    "public" => true,
+    "publicly_queryable" => true,
+    "show_ui" => true,
+    "show_in_rest" => false,
+    "rest_base" => "",
+    "has_archive" => false,
+    "show_in_menu" => true,
+    "exclude_from_search" => false,
+    "capability_type" => "post",
+    "map_meta_cap" => true,
+    "hierarchical" => false,
+    "rewrite" => array( "slug" => "post", "with_front" => true ),
+    "query_var" => true,
+    "supports" => array( "title", "editor", "thumbnail", "custom-fields", "comments" ),
+    "taxonomies" => array( "post_tag", "category"),
+  );
+  register_post_type( "news", $args );
+}
+add_action( 'init', 'thea_register_my_post_type' );
 ?>
