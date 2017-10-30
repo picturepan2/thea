@@ -1,0 +1,2 @@
+# thea
+WordPress theme
