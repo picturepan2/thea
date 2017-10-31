@@ -203,15 +203,6 @@ a:focus {
   justify-content: center;
 }
 
-.thea-body .pagination a {
-  color: #4b5663;
-}
-
-.thea-body .pagination a:focus,
-.thea-body .pagination a:hover {
-  color: #0145dd;
-}
-
 .thea-body .empty {
   padding-bottom: 10vh;
   padding-top: 10vh;
@@ -248,6 +239,7 @@ a:focus {
 
 .post .post-image {
   margin: 1.5rem -2.4rem;
+  max-height: 640px;
 }
 
 .post .post-image img {
@@ -276,6 +268,7 @@ a:focus {
 
 .post .post-meta-tags .tag {
   margin-right: .2rem;
+  margin-top: .2rem;
   padding: .4rem;
 }
 

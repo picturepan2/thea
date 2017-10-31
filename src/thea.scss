@@ -209,15 +209,6 @@ a {
 
   .pagination {
     justify-content: center;
-
-    a {
-      color: $font-color;
-
-      &:focus,
-      &:hover {
-        color: $primary-color;
-      }
-    }
   }
 
   .empty {
@@ -257,6 +248,7 @@ a {
 
   .post-image {
     margin: 1.5rem -2.4rem;
+    max-height: 640px;
     
     img {
       max-width: 100%;
@@ -286,6 +278,7 @@ a {
   .post-meta-tags {
     .tag {
       margin-right: .2rem;
+      margin-top: .2rem;
       padding: .4rem;
 
       &:focus,

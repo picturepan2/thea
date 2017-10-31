@@ -53,26 +53,27 @@ function annotation($content){
 }
 add_filter('the_content', 'annotation');
 
+// Pagination
 function pagenavi(){
 	global $wp_query;
 	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
 	$total = $wp_query->max_num_pages;
-	$links = '<div class="page_navi">';
+	$links = '<ul class="pagination">';
 	if ($total == 1) return;
-	if ($current > 1)	$links .= pagenavi_link($current - 1, '<');
-	if ($current >= 5) $links .= pagenavi_link(1, '1');
-	if ($current > 5) $links .= '<span class="page-numbers dots">...</span>';
+	if ($current > 1)	$links .= '<li class="page-item">' . pagenavi_link($current - 1, '<') . '</li>';
+	if ($current >= 5) $links .= '<li class="page-item">' . pagenavi_link(1, '1') . '</li>';
+	if ($current > 5) $links .= '<li class="page-item"><span>...</span></li>';
 	for($i = $current - 3; $i <= $current + 3; $i++) {
-		if ($i > 0 && $i <= $total) $i == $current ? $links .= '<span class="page-numbers current">'.$i.'</span>' : $links .= pagenavi_link($i, $i);
+		if ($i > 0 && $i <= $total) $i == $current ? $links .= '<li class="page-item active">'. pagenavi_link($i, $i) .'</li>' : $links .= '<li class="page-item">' . pagenavi_link($i, $i) . '</li>';
 	}
-	if ($current < $total - 4) $links .= '<span class="page-numbers dots">...</span>';
-	if ($current <= $total - 4) $links .= pagenavi_link($total, $total);
-	if ($current < $total) $links .= pagenavi_link($current + 1, '>');
-	$links .= '</div>';
+	if ($current < $total - 4) $links .= '<li class="page-item"><span>...</span></li>';
+	if ($current <= $total - 4) $links .= '<li class="page-item">' . pagenavi_link($total, $total) . '</li>';
+	if ($current < $total) $links .= '<li class="page-item">' . pagenavi_link($current + 1, '>') . '</li>';
+	$links .= '</ul>';
 	echo $links;
 }
 function pagenavi_link($page, $n) {
-	return '<a href="' . esc_url(get_pagenum_link($page)) . '" class="page-numbers">'.$n.'</a>';
+	return '<a href="' . esc_url(get_pagenum_link($page)) . '">'.$n.'</a>';
 }
 
 // Thumbnails
