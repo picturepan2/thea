@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<?php 
-  query_posts(array( 
-    'post_type' => array('post', 'news')
-  ));  
-?>
 
 <main class="thea-body" role="main">
   <div class="container">

@@ -1,17 +1,18 @@
 <?php
 remove_action('wp_head', 'wp_generator');
-
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
+
 function remove_comments_rss( $for_comments ) {
 	return;
 }
-add_filter('post_comments_feed_link','remove_comments_rss');
+add_filter('post_comments_feed_link', 'remove_comments_rss');
 
 function livesino_excerpt_length($length) {
 	return 90;
 }
 add_filter('excerpt_length', 'livesino_excerpt_length');
 
+// No self ping
 function no_self_ping( &$links ) {
 	$home = get_option( 'home' );
 	foreach ( $links as $l => $link )
@@ -19,6 +20,12 @@ function no_self_ping( &$links ) {
 			unset($links[$l]);
 }
 add_action('pre_ping', 'no_self_ping' );
+
+// Disable autosave
+function disable_autosave() {
+  wp_deregister_script('autosave');
+}
+add_action( 'wp_print_scripts', 'disable_autosave' );
 
 function new_excerpt_more($more) {
 	global $post;
@@ -107,4 +114,13 @@ function thea_register_my_post_type() {
   register_post_type( "news", $args );
 }
 add_action( 'init', 'thea_register_my_post_type' );
+
+function add_post_types_to_query( $query ) {
+	$query->set( 'post_type', array( 'post', 'news' ));
+  return $query;
+}
+add_action( 'pre_get_posts', 'add_post_types_to_query' );
+
+// Remove paragraph tag
+remove_filter( 'term_description', 'wpautop' );
 ?>
