@@ -312,6 +312,31 @@ a:focus {
   margin-top: 4rem;
 }
 
+.post-comments .comments-list {
+  margin: 2rem 0;
+}
+
+.post-comments .comments-list .children {
+  margin-left: 2rem;
+}
+
+.post-comments .tile-comment p {
+  margin-bottom: .5rem;
+}
+
+.post-comments .comment-actions {
+  display: none;
+  margin-left: 1rem;
+}
+
+.post-comments .tile:hover .comment-actions {
+  display: inline-block;
+}
+
+.post-comments .form {
+  margin: 1rem 0;
+}
+
 .thea-ad {
   background: #f7f8fa;
   padding: 1rem;

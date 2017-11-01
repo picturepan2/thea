@@ -323,6 +323,37 @@ a {
 // Comments
 .post-comments {
   margin-top: 4rem;
+
+  .comments-list {
+    margin: 2rem 0;
+
+    .children {
+      margin-left: 2rem;
+    }
+  }
+
+  .tile-comment {
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .comment-actions {
+    display: none;
+    margin-left: 1rem;
+  }
+
+  .tile {
+    &:hover {
+      .comment-actions {
+        display: inline-block;
+      }
+    }
+  }
+
+  .form {
+    margin: 1rem 0;
+  }
 }
 
 // Ads

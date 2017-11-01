@@ -23,10 +23,10 @@
         <div class="navbar-section">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </div>
-        <div class="navbar-center">
+        <div class="navbar-center hide-sm">
           <ul class="nav">
             <li class="nav-item"><a href="/">资讯</a></li>
-            <li class="nav-item "><a href="/tag/new/">新品</a></li>
+            <li class="nav-item "><a href="/tag/hardware/">硬件</a></li>
             <li class="nav-item"><a href="/tag/insider/">Insider</a></li>
             <li class="nav-item"><a href="/tag/xbox/">Xbox</a></li>
             <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
