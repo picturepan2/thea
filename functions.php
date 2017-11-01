@@ -94,4 +94,5 @@ add_action( 'pre_get_posts', 'add_post_types_to_query' );
 
 // Remove paragraph tag
 remove_filter( 'term_description', 'wpautop' );
+
 ?>

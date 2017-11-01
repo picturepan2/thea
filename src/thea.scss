@@ -23,7 +23,7 @@ a {
   height: 3rem;
   
   .logo {
-    color: $dark-color;  
+    color: lighten($dark-color, 10%);  
     font-size: 1.2rem;
     font-weight: 700;
     box-shadow: none;
@@ -73,12 +73,12 @@ a {
 
 .thea-footer {
   background: $bg-color;
-  color: $gray-color;
+  color: lighten($gray-color, 10%);
   padding-bottom: 2rem;
   padding-top: 2rem;
 
   a {
-    color: $font-color;
+    color: darken($gray-color, 10%);
   }
 
   .footer-nav {
@@ -209,25 +209,6 @@ a {
 
   .pagination {
     justify-content: center;
-  }
-
-  .empty {
-    padding-bottom: 10vh;
-    padding-top: 10vh;
-
-    .empty-title {
-      color: lighten($gray-color, 15%);
-      font-size: 10vw;
-      font-weight: 700;
-      line-height: 1;
-      margin: 0;
-    }
-
-    .empty-subtitle {
-      color: lighten($gray-color, 0%);
-      font-size: 1.4rem;
-      margin-bottom: 1.4rem;
-    }
   }
 }
 

@@ -22,6 +22,8 @@
   </div>
 </div>
 
+<?php get_template_part( 'template-parts/post-ad'); ?>
+
 <main class="thea-body" role="main">
   <div class="container">
     <?php if (have_posts()) : ?>

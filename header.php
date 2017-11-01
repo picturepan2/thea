@@ -24,7 +24,13 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </div>
         <div class="navbar-center">
-          <!-- Menu -->
+          <ul class="nav">
+            <li class="nav-item"><a href="/">资讯</a></li>
+            <li class="nav-item "><a href="/tag/new/">新品</a></li>
+            <li class="nav-item"><a href="/tag/insider/">Insider</a></li>
+            <li class="nav-item"><a href="/tag/xbox/">Xbox</a></li>
+            <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
+          </ul>
         </div>
         <div class="navbar-section"> 
           <a class="rss-button" href="<?php bloginfo('rss2_url'); ?>" target="_blank">
@@ -34,4 +40,3 @@
       </div>
     </div>
   </div>
-  <?php get_template_part( 'template-parts/post-ad'); ?>

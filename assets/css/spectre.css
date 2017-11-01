@@ -560,7 +560,7 @@ dl dd {
 
 .btn:focus,
 .btn:hover {
-  background: #9fbcff;
+  background: #ebf1ff;
   border-color: #0140ce;
   text-decoration: none;
 }
@@ -1268,7 +1268,7 @@ input.disabled + .form-icon {
 }
 
 .label.label-secondary {
-  background: #9fbcff;
+  background: #ebf1ff;
   color: #0145dd;
 }
 
@@ -2215,13 +2215,13 @@ video.video-responsive::before {
 
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
-  background: #9fbcff;
+  background: #ebf1ff;
   color: #0145dd;
 }
 
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
-  background: #9fbcff;
+  background: #ebf1ff;
   color: #0145dd;
 }
 
@@ -2319,6 +2319,41 @@ video.video-responsive::before {
 .modal-container .modal-footer {
   padding: .8rem;
   text-align: right;
+}
+
+.nav {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  margin: .2rem 0;
+}
+
+.nav .nav-item a {
+  color: #667189;
+  padding: .2rem .4rem;
+  text-decoration: none;
+}
+
+.nav .nav-item a:focus,
+.nav .nav-item a:hover {
+  color: #0145dd;
+}
+
+.nav .nav-item.active > a {
+  color: #50596c;
+  font-weight: bold;
+}
+
+.nav .nav-item.active > a:focus,
+.nav .nav-item.active > a:hover {
+  color: #0145dd;
+}
+
+.nav .nav {
+  margin-bottom: .4rem;
+  margin-left: .8rem;
 }
 
 .pagination {
@@ -2732,7 +2767,7 @@ a.text-error:hover {
 }
 
 .bg-secondary {
-  background: #9fbcff;
+  background: #ebf1ff;
 }
 
 .bg-dark {
