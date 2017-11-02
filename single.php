@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part( 'template-parts/post-ad'); ?>
+<?php get_template_part( 'template-parts/part-ad'); ?>
 
 <main class="thea-post" role="main">
   <div class="container">

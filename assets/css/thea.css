@@ -53,15 +53,57 @@ a:focus {
   color: #0145dd;
 }
 
-.navbar .social-link,
-.navbar .rss-button {
+.navbar .rss-button,
+.navbar .social-button {
   height: 1.2rem;
-  margin-left: .6rem;
+  margin-left: .8rem;
+  width: 1.2rem;
+}
+
+.navbar .search {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  height: 3rem;
+}
+
+.navbar .search:hover,
+.navbar .search.active {
+  border-bottom: .1rem solid #4d4c4c;
+}
+
+.navbar .search .search-form {
+  align-items: center;
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-align: center;
+  height: 3rem;
+  max-width: 10rem;
+}
+
+.navbar .search .search-input {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  line-height: .8rem;
+  width: auto;
+}
+
+.navbar .search .search-btn {
+  background-image: url("../icons/search.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 1.2rem;
   width: 1.2rem;
 }
 
 .thea-footer {
-  background: #f7f8fa;
   color: #bfc3c8;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -87,7 +129,7 @@ a:focus {
 }
 
 .thea-meta .meta-title {
-  color: #333;
+  color: #4d4c4c;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -152,7 +194,7 @@ a:focus {
 }
 
 .thea-body .card:hover {
-  box-shadow: 0 .3rem 1rem rgba(51, 51, 51, .25);
+  box-shadow: 0 .3rem 1.5rem rgba(51, 51, 51, .25);
   transform: translateY(-2px);
 }
 
@@ -201,6 +243,11 @@ a:focus {
 .thea-body .pagination {
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.thea-body .empty .empty-title,
+.thea-body .empty .empty-subtitle {
+  margin-bottom: 1rem;
 }
 
 .thea-post {

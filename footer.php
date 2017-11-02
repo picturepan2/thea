@@ -1,4 +1,5 @@
-  <?php get_template_part( 'template-parts/post-ad'); ?>
+  <?php get_template_part( 'template-parts/part-ad'); ?>
+
   <footer class="thea-footer">
     <div class="container text-center">
       <nav class="footer-nav">
@@ -9,6 +10,8 @@
         <a href="/about">投稿</a>
         <span class="divider-dot">·</span>
         <a href="/about">广告合作</a>
+        <span class="divider-dot">·</span>
+        <a href="/links">友链</a>
       </nav>
       <section class="copyright">&copy; 2007 - 2017 <?php bloginfo( 'name' ); ?> 保留一切权利</section>
       <section class="copyright">Proudly published with <a href="https://wordpress.org/" target="_blank">WordPress</a>. Theme <a href="https://github.com/picturepan2/thea" target="_blank">Thea</a> made with <span class="text-error">&hearts;</span>. </section>

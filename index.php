@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part( 'template-parts/post-ad'); ?>
+<?php get_template_part( 'template-parts/part-ad'); ?>
 
 <main class="thea-body" role="main">
   <div class="container">
@@ -7,7 +7,7 @@
       <div class="columns">
         <?php while (have_posts()) : the_post(); ?>
           <div class="column col-3 col-lg-4 col-md-6 col-sm-12">
-            <?php get_template_part( 'template-parts/post-card'); ?>
+            <?php get_template_part( 'template-parts/part-card'); ?>
           </div>
         <?php endwhile; ?>
       </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
     <?php else: ?>
-      <div class="fuss nova">内容不存在。</div>
+      <?php get_template_part( 'template-parts/part-empty'); ?>
     <?php endif; ?>
   </div>
 </main>

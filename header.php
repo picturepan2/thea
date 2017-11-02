@@ -26,13 +26,22 @@
         <div class="navbar-center hide-sm">
           <ul class="nav">
             <li class="nav-item"><a href="/">资讯</a></li>
-            <li class="nav-item "><a href="/tag/hardware/">硬件</a></li>
-            <li class="nav-item"><a href="/tag/insider/">Insider</a></li>
+            <li class="nav-item "><a href="/tag/hardware/">设备</a></li>
             <li class="nav-item"><a href="/tag/xbox/">Xbox</a></li>
             <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
           </ul>
         </div>
-        <div class="navbar-section"> 
+        <div class="navbar-section">
+          
+          <div id="search" class="search<?php echo get_search_query() ?  ' active' : ''; ?>">
+            <form method="get" class="search-form" name="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+              <input type="text" class="search-input form-input" value="<?php the_search_query(); ?>" placeholder="搜索" name="s">
+              <input type="submit" class="search-btn btn btn-link" value="">
+            </form>
+          </div>
+          <a class="social-button" href="https://weibo.com/livesino" target="_blank">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/weibo.svg">
+          </a>
           <a class="rss-button" href="<?php bloginfo('rss2_url'); ?>" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/rss.svg">
           </a>
