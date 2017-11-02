@@ -887,6 +887,11 @@ textarea.form-input {
   padding: .45rem 1.4rem .45rem .6rem;
 }
 
+.form-select.select-inline {
+  display: inline;
+  width: auto;
+}
+
 .has-icon-left,
 .has-icon-right {
   position: relative;

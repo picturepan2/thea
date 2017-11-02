@@ -79,7 +79,7 @@ a:focus {
   flex: 1 1 auto;
   -ms-flex-align: center;
   height: 3rem;
-  max-width: 10rem;
+  max-width: 7rem;
 }
 
 .navbar .search .search-input {
@@ -90,6 +90,7 @@ a:focus {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   line-height: .8rem;
+  max-width: 5.8rem;
   width: auto;
 }
 

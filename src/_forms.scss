@@ -149,6 +149,12 @@ textarea.form-input {
     height: $control-size-lg;
     padding: $control-padding-y-lg ($control-icon-size + $control-padding-x-lg) $control-padding-y-lg $control-padding-x-lg;
   }
+
+  // Select inline
+  &.select-inline {
+    display: inline;
+    width: auto;
+  }
 }
 
 // Form Icons

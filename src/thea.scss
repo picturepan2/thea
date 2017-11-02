@@ -84,7 +84,7 @@ a {
       display: inline-flex;
       flex: 1 1 auto;
       height: 3rem;
-      max-width: 10rem;
+      max-width: 7rem;
     }
 
     .search-input {
@@ -94,6 +94,7 @@ a {
       box-shadow: none;
       flex: 1 1 auto;
       line-height: $unit-4;
+      max-width: 5.8rem;
       width: auto;
     }
 
