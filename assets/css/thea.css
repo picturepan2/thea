@@ -301,6 +301,16 @@ a:focus {
   width: 100%;
 }
 
+.post .post-like.popover:hover .popover-container {
+  display: none;
+}
+
+.post .post-like .btn:focus + .popover-container,
+.post .post-like .popover-container:hover {
+  display: block;
+  opacity: 1;
+}
+
 .post .post-like .popover-container {
   max-width: 32rem;
   width: 100%;

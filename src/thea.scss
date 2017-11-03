@@ -305,6 +305,18 @@ a {
     text-align: center;
     width: 100%;
 
+    &.popover {
+      &:hover .popover-container {
+        display: none;
+      }
+    }
+
+    .btn:focus + .popover-container,
+    .popover-container:hover {
+      display: block;
+      opacity: 1;
+    }
+
     .popover-container {
       max-width: 32rem;
       width: 100%;
