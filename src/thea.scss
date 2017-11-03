@@ -274,10 +274,13 @@ a {
   .post-image {
     margin: 1.5rem -2.4rem;
     max-height: 640px;
+    text-align: center;
     
     img {
+      max-height: 640px;
       max-width: 100%;
       height: auto;
+      width: auto;
     }
   }
 

@@ -269,11 +269,14 @@ a:focus {
 .post .post-image {
   margin: 1.5rem -2.4rem;
   max-height: 640px;
+  text-align: center;
 }
 
 .post .post-image img {
-  height: auto; 
+  height: auto;
+  max-height: 640px;
   max-width: 100%;
+  width: auto;
 }
 
 .post .post-title {
