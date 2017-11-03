@@ -22,9 +22,9 @@
         <?php the_content(); ?>
       </div>
 
-      <section class="post-comments">
+      <div class="post-comments">
         <?php comments_template(); ?>
-      </section>
+      </div>
     </article>
 
     <?php endwhile; else: ?>

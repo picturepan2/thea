@@ -300,6 +300,17 @@ a {
     }
   }
 
+  .post-like {
+    margin: 2rem 0;
+    text-align: center;
+    width: 100%;
+
+    .popover-container {
+      max-width: 32rem;
+      width: 100%;
+    }
+  }
+
   .post-meta-tags {
     .tag {
       margin-right: .2rem;

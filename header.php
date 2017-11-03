@@ -9,9 +9,8 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>"/>
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>"/>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/spectre.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/thea.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/spectre.min.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/thea.min.css">
 	<?php wp_head(); ?>
 </head>
 <!-- TradeDoubler site verification 2825512 -->
@@ -39,10 +38,10 @@
               <input type="submit" class="search-btn btn btn-link" value="">
             </form>
           </div>
-          <a class="social-button" href="https://weibo.com/livesino" target="_blank">
+          <a class="social-button hide-sm" href="https://weibo.com/livesino" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/weibo.svg">
           </a>
-          <a class="rss-button" href="<?php bloginfo('rss2_url'); ?>" target="_blank">
+          <a class="rss-button hide-sm" href="<?php bloginfo('rss2_url'); ?>" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/rss.svg">
           </a>
         </div>

@@ -295,6 +295,17 @@ a:focus {
   color: #4b5663;
 }
 
+.post .post-like {
+  margin: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.post .post-like .popover-container {
+  max-width: 32rem;
+  width: 100%;
+}
+
 .post .post-meta-tags .tag {
   margin-right: .2rem;
   margin-top: .2rem;

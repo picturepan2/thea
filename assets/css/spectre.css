@@ -2449,6 +2449,70 @@ video.video-responsive::before {
   padding: 0 .8rem;
 }
 
+.popover {
+  display: inline-block;
+  position: relative;
+}
+
+.popover .popover-container {
+  content: attr(data-tooltip);
+  left: 50%;
+  opacity: 0;
+  padding: .4rem;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .2s ease;
+  width: 320px;
+  z-index: 400;
+}
+
+.popover :focus + .popover-container,
+.popover:hover .popover-container,
+.popover .popover-container:hover {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -100%) scale(1);
+}
+
+.popover.popover-right .popover-container {
+  left: 100%;
+  top: 50%;
+}
+
+.popover.popover-right :focus + .popover-container,
+.popover.popover-right:hover .popover-container,
+.popover.popover-right .popover-container:hover {
+  transform: translate(0, -50%) scale(1);
+}
+
+.popover.popover-bottom .popover-container {
+  left: 50%;
+  top: 100%;
+}
+
+.popover.popover-bottom :focus + .popover-container,
+.popover.popover-bottom:hover .popover-container,
+.popover.popover-bottom .popover-container:hover {
+  transform: translate(-50%, 0) scale(1);
+}
+
+.popover.popover-left .popover-container {
+  left: 0;
+  top: 50%;
+}
+
+.popover.popover-left :focus + .popover-container,
+.popover.popover-left:hover .popover-container,
+.popover.popover-left .popover-container:hover {
+  transform: translate(-100%, -50%) scale(1);
+}
+
+.popover .card {
+  border: 0; 
+  box-shadow: 0 .2rem .5rem rgba(51, 51, 51, .3);
+}
+
 .tab {
   align-items: center;
   border-bottom: .05rem solid #e7e9ed;

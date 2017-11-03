@@ -40,9 +40,23 @@
         ?>
       </div>
 
-      <section class="post-comments">
+      <div class="post-like popover">
+        <button class="btn btn-primary btn-lg">赞赏</button>
+        <div class="popover-container">
+          <div class="card">
+            <div class="card-header">
+              谢谢赞赏 <span class="text-error">&hearts;</span>
+            </div>
+            <div class="card-body">
+              <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/livesino-like.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-comments">
         <?php comments_template(); ?>
-      </section>
+        </div>
     </article>
 
     <?php endwhile; else: ?>
