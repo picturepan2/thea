@@ -86,12 +86,6 @@ add_filter( 'intermediate_image_sizes_advanced', 'prefix_remove_default_images' 
 // Add thumbnail support
 add_theme_support( 'post-thumbnails' );
 
-function add_post_types_to_query( $query ) {
-	$query->set( 'post_type', array( 'post', 'news' ));
-  return $query;
-}
-add_action( 'pre_get_posts', 'add_post_types_to_query' );
-
 // Remove paragraph tag
 remove_filter( 'term_description', 'wpautop' );
 

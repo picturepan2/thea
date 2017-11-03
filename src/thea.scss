@@ -311,10 +311,10 @@ a {
       }
     }
 
-    .btn:focus + .popover-container,
-    .popover-container:hover {
+    .popover-container:target {
       display: block;
       opacity: 1;
+      transform: translate(-50%, -100%) scale(1);
     }
 
     .popover-container {
@@ -360,6 +360,17 @@ a {
       margin-bottom: 1.2rem;
       margin-top: 1.2rem;
     }
+
+    ol,
+    ul {
+      margin-bottom: 1rem;
+      margin-top: .5rem;
+    }
+
+    li {
+      line-height: 1.8;
+      margin-top: .5rem;
+    }
   
     p {
       line-height: 1.8;
@@ -383,6 +394,17 @@ a {
         top: 50%;
         width: 2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .post {
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    .post-image {
+      margin: 1.5rem -.9rem;
     }
   }
 }

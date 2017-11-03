@@ -40,16 +40,21 @@
         ?>
       </div>
 
-      <div class="post-like popover">
-        <button class="btn btn-primary btn-lg">赞赏</button>
-        <div class="popover-container">
-          <div class="card">
-            <div class="card-header">
-              谢谢赞赏 <span class="text-error">&hearts;</span>
+      <div class="post-like">
+        <a href="#like" class="btn btn-primary btn-lg">赞赏</a>
+        <div id="like" class="modal">
+          <a href="#thankyou" class="modal-overlay"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#thankyou" class="btn btn-clear float-right"></a>
+              <div class="modal-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
             </div>
-            <div class="card-body">
-              <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/livesino-like.jpg">
+            <div class="modal-body">
+              <div class="content">
+                <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/livesino-like.jpg">
+              </div>
             </div>
+            <div class="modal-footer"></div>
           </div>
         </div>
       </div>

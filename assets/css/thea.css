@@ -305,10 +305,10 @@ a:focus {
   display: none;
 }
 
-.post .post-like .btn:focus + .popover-container,
-.post .post-like .popover-container:hover {
+.post .post-like .popover-container:target {
   display: block;
   opacity: 1;
+  transform: translate(-50%, -100%) scale(1);
 }
 
 .post .post-like .popover-container {
@@ -353,6 +353,17 @@ a:focus {
   margin-top: 1.2rem;
 }
 
+.post .post-content ol,
+.post .post-content ul {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+.post .post-content li {
+  line-height: 1.8;
+  margin-top: .5rem;
+}
+
 .post .post-content p {
   line-height: 1.8;
   margin: 1.2rem 0;
@@ -375,6 +386,16 @@ a:focus {
   position: absolute;
   top: 50%;
   width: 2rem;
+}
+
+@media (max-width: 640px) {
+  .post {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .post .post-image {
+    margin: 1.5rem -.9rem;
+  }
 }
 
 .post-comments {
