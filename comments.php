@@ -52,7 +52,7 @@
 <?php endif; ?>
 
 <?php if ( comments_open() ) : ?>
-  <h5 class="comments-title">发表评论</h5>
+  <h5 id="respond" class="comments-title">发表评论</h5>
   <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
     <p>您必须<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">登录</a>后才能发表评论。</p>
   <?php else : ?>

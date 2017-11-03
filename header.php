@@ -20,7 +20,7 @@
     <div class="container">
       <div class="navbar">
         <div class="navbar-section">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="<?php bloginfo( 'name' ); ?>" rel="home">LiveSino</a>
         </div>
         <div class="navbar-center hide-sm">
           <ul class="nav">
