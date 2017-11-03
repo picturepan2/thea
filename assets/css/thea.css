@@ -304,19 +304,8 @@ a:focus {
   width: 100%;
 }
 
-.post .post-like.popover:hover .popover-container {
-  display: none;
-}
-
-.post .post-like .popover-container:target {
-  display: block;
-  opacity: 1;
-  transform: translate(-50%, -100%) scale(1);
-}
-
-.post .post-like .popover-container {
-  max-width: 32rem;
-  width: 100%;
+.post .post-like .modal-body {
+  max-height: none;
 }
 
 .post .post-meta-tags .tag {

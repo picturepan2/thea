@@ -54,7 +54,6 @@
                 <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/livesino-like.jpg">
               </div>
             </div>
-            <div class="modal-footer"></div>
           </div>
         </div>
       </div>

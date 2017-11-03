@@ -308,21 +308,8 @@ a {
     text-align: center;
     width: 100%;
 
-    &.popover {
-      &:hover .popover-container {
-        display: none;
-      }
-    }
-
-    .popover-container:target {
-      display: block;
-      opacity: 1;
-      transform: translate(-50%, -100%) scale(1);
-    }
-
-    .popover-container {
-      max-width: 32rem;
-      width: 100%;
+    .modal-body {
+      max-height: none;
     }
   }
 
