@@ -28,8 +28,7 @@ function disable_autosave() {
 add_action( 'wp_print_scripts', 'disable_autosave' );
 
 function new_excerpt_more($more) {
-	global $post;
-	return '<p><a href="'. get_permalink($post->ID) . '" class="more-link">阅读全文</a></p>';
+	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

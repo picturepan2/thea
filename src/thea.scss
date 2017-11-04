@@ -4,6 +4,9 @@
 
 // Core
 .container {
+  padding-left: .8rem;
+  padding-right: .8rem;
+
   @media (min-width: 1200px) {
     max-width: 1200px;
   }
@@ -180,6 +183,15 @@ a {
   padding-bottom: 1rem;
   padding-top: 1rem;
 
+  .columns {
+    margin-left: -.8rem;
+    margin-right: -.8rem;
+
+    .column {
+      padding: .8rem;
+    }
+  }
+
   .card {
     border: 0;
     border-radius: $border-radius;
@@ -210,9 +222,8 @@ a {
       display: -webkit-box;
       font-size: .9rem;
       font-weight: 500;
-      height: 3.75rem;
-      line-height: 1.25rem;
-      margin-bottom: 0;
+      max-height: 4.5rem;
+      line-height: 1.5rem;
       overflow: hidden;
       text-overflow: ellipsis;
       -webkit-line-clamp: 3;
@@ -220,7 +231,7 @@ a {
     }
 
     .post-card-date {
-      opacity: .5;
+      color: lighten($dark-color, 60%);
     }
 
     .card-link {
@@ -231,6 +242,14 @@ a {
       &:hover {
         color: $dark-color;
         text-decoration: none;
+      }
+
+      p {
+        color: lighten($dark-color, 30%);
+        line-height: 1.1rem;
+        margin-bottom: 0;
+        max-height: 3.3rem;
+        overflow: hidden;
       }
     }
   }
@@ -257,15 +276,17 @@ a {
   letter-spacing: -.021em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 40rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 36rem;
   width: 100%;
 
   .post-image {
-    margin: 1.5rem -2.4rem;
+    margin: 1.5rem -.9rem;
     max-height: 640px;
     text-align: center;
+
+    @media (min-width: 960px) {
+      margin: 1.5rem -2.9rem;
+    }
     
     img {
       max-height: 640px;
@@ -375,17 +396,6 @@ a {
         top: 50%;
         width: 2rem;
       }
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .post {
-    padding-left: .5rem;
-    padding-right: .5rem;
-
-    .post-image {
-      margin: 1.5rem -.9rem;
     }
   }
 }

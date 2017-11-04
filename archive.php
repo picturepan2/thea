@@ -29,7 +29,7 @@
     <?php if (have_posts()) : ?>
       <div class="columns">
         <?php while (have_posts()) : the_post(); ?>
-          <div class="column col-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="column col-4 col-md-6 col-sm-12">
             <?php get_template_part( 'template-parts/part-card'); ?>
           </div>
         <?php endwhile; ?>

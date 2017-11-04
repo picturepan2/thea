@@ -1,4 +1,9 @@
 /*! Thea | MIT License | github.com/picturepan2/thea */
+.container {
+  padding-left: .8rem;
+  padding-right: .8rem;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -177,6 +182,15 @@ a:focus {
   padding-top: 1rem;
 }
 
+.thea-body .columns {
+  margin-left: -.8rem;
+  margin-right: -.8rem;
+}
+
+.thea-body .columns .column {
+  padding: .8rem;
+}
+
 .thea-body .card {
   border: 0;
   border-radius: .2rem;
@@ -209,16 +223,15 @@ a:focus {
   display: -webkit-box;
   font-size: .9rem;
   font-weight: 500;
-  height: 3.75rem;
   -webkit-line-clamp: 3; 
-  line-height: 1.25rem;
-  margin-bottom: 0;
+  line-height: 1.5rem;
+  max-height: 4.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .thea-body .card .post-card-date {
-  opacity: .5;
+  color: #ccc;
 }
 
 .thea-body .card .card-link {
@@ -230,6 +243,14 @@ a:focus {
 .thea-body .card .card-link:hover {
   color: #333;
   text-decoration: none;
+}
+
+.thea-body .card .card-link p {
+  color: #807f7f;
+  line-height: 1.1rem;
+  margin-bottom: 0;
+  max-height: 3.3rem;
+  overflow: hidden;
 }
 
 .thea-body .pagination {
@@ -251,16 +272,20 @@ a:focus {
   letter-spacing: -.021em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 40rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 36rem;
   width: 100%;
 }
 
 .post .post-image {
-  margin: 1.5rem -2.4rem;
+  margin: 1.5rem -.9rem;
   max-height: 640px;
   text-align: center;
+}
+
+@media (min-width: 960px) {
+  .post .post-image {
+    margin: 1.5rem -2.9rem;
+  }
 }
 
 .post .post-image img {
@@ -369,16 +394,6 @@ a:focus {
   position: absolute;
   top: 50%;
   width: 2rem;
-}
-
-@media (max-width: 640px) {
-  .post {
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
-  .post .post-image {
-    margin: 1.5rem -.9rem;
-  }
 }
 
 .post-comments {
