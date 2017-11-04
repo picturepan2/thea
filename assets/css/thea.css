@@ -177,15 +177,6 @@ a:focus {
   padding-top: 1rem;
 }
 
-.thea-body .columns {
-  margin-left: -.8rem;
-  margin-right: -.8rem;
-}
-
-.thea-body .columns .column {
-  padding: .8rem .8rem;
-}
-
 .thea-body .card {
   border: 0;
   border-radius: .2rem;
