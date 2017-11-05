@@ -50,8 +50,13 @@
               <div class="modal-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
             </div>
             <div class="modal-body">
-              <div class="content">
-                <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/livesino-like.jpg">
+              <div class="columns">
+                <div class="column col-6">
+                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-wechat.png">
+                </div>
+                <div class="column col-6">
+                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-alipay.png">
+                </div>
               </div>
             </div>
           </div>
