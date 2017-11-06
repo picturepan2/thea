@@ -72,7 +72,7 @@
     <?php endif; ?>
     <?php do_action('comment_form', $post->ID); ?>
       <div class="form-group">
-        <textarea name="comment-content" id="comment-content" class="form-input" rows="5" tabindex="4"></textarea>
+        <textarea name="comment" id="comment" class="form-input" rows="5" tabindex="4"></textarea>
       </div>
       <div class="form-group">
         <input name="submit" type="submit" id="submit" class="btn btn-primary" tabindex="5" value="发表评论" />
