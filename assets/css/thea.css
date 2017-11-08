@@ -360,6 +360,10 @@ a:focus {
   margin-top: 1.2rem;
 }
 
+.post .post-content blockquote {
+  padding-left: 2rem;
+}
+
 .post .post-content ol,
 .post .post-content ul {
   margin-bottom: 1rem;
