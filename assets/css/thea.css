@@ -22,7 +22,7 @@ a:focus {
 
 .thea-header .logo {
   box-shadow: none; 
-  color: #4d4c4c;
+  color: #414857;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -46,7 +46,7 @@ a:focus {
 }
 
 .navbar .nav a {
-  color: #4b5663;
+  color: #414857;
   font-weight: 700;
   margin: 0 .3rem;
   padding: .3rem .1rem;
@@ -220,7 +220,7 @@ a:focus {
 
 .thea-body .card .post-card-title {
   display: -webkit-box;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 500;
   -webkit-line-clamp: 3; 
   line-height: 1.5rem;
@@ -235,7 +235,7 @@ a:focus {
 
 .thea-body .card .card-link {
   box-shadow: none;
-  color: #4b5663;
+  color: #414857;
 }
 
 .thea-body .card .card-link:focus,
@@ -310,7 +310,7 @@ a:focus {
 
 .post .post-meta a:focus,
 .post .post-meta a:hover {
-  color: #4b5663;
+  color: #414857;
 }
 
 .post .post-like {
@@ -340,7 +340,7 @@ a:focus {
 }
 
 .post .post-content {
-  color: #4b5663;
+  color: #414857;
   font-size: .8rem;
   margin: 1.2rem 0;
 }
@@ -388,7 +388,7 @@ a:focus {
 }
 
 .post .post-content hr::before {
-  background: #4b5663;
+  background: #414857;
   content: "";
   display: inline-block;
   height: .1rem;
