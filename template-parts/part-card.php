@@ -16,7 +16,7 @@
     <time class="post-card-date"><?php the_time('Y 年 n 月 j 日,  g:i A'); ?></time>
     <?php if (get_comments_number() != 0) : ?>
       <div class="post-card-comment float-right">
-        <?php comments_popup_link( '', '1', '%', 'label' ); ?>
+        <?php comments_popup_link( '', '1', '%', 'label label-secondary' ); ?>
       </div>
     <?php endif; ?>
   </footer>
