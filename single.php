@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <div class="post-comments">
+      <div id="comments" class="post-comments">
         <?php comments_template(); ?>
       </div>
 
