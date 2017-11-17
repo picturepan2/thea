@@ -7,10 +7,10 @@
       <header class="post-header">
         <h1 class="post-title"><?php the_title(); ?></h1>
         <div class="post-meta">
-          <time class="post-meta-date"><?php the_time('Y 年 n 月 j 日,  g:i A'); ?></time>
+          <time class="post-meta-date"><?php the_date('F j, Y'); ?> at <?php the_time('g:i a'); ?></time>
           <span class="divider-dot">·</span>
           <span class="post-meta-author"><?php the_author(); ?></span>
-          <?php edit_post_link('编辑', ' · ', ''); ?>
+          <?php edit_post_link('Edit', ' · ', ''); ?>
         </div>
       </header>
 
@@ -30,7 +30,7 @@
     <?php endwhile; else: ?>
 
     <article class="post" id="post-error">
-      <p>抱歉，没有找到任何内容。</p>
+      <p>Nothing.</p>
     </article>
 
     <?php endif; ?>

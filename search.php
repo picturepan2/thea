@@ -4,7 +4,7 @@
   <div class="container">
     <header class="meta-header">
       <h2 class="meta-title">
-	  	<?php the_search_query() ?> 搜索结果
+	  	<?php the_search_query() ?> Search results
       </h2>
     </header>
   </div>

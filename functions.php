@@ -48,9 +48,7 @@ function annotation($content){
   if ( has_post_thumbnail( $post->ID ) ){
     $content = '<p>' . get_the_post_thumbnail( $post->ID ) . '</p>' . $content;
   }
-  $content .= '<p>广告：<a href="https://c.duomai.com/track.php?site_id=230507&lid=366627&aid=61&euid=RSS&t=http%3A%2F%2Fwww.jd.com%2F">京东 1111 双十一折扣促销</a></p>';
-  $content .= '<p>&copy;2017 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a> | <a href="'.get_permalink().'#comments" title="'.get_the_title().' 的评论">添加评论</a></p>';
-	return $content;
+  return $content;
 }
 add_filter('the_content_feed', 'annotation');
 

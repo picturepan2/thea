@@ -3,11 +3,11 @@
 <main class="thea-body" role="main">
   <div class="container">
     <div class="empty">
-      <h4 class="empty-title">:( 无法找到该页</h4>
-      <p class="empty-subtitle">很抱歉，您试图访问的 <span class="label"><?php echo $_SERVER["REQUEST_URI"]; ?></span> 不存在，请确认您访问的地址。</p>
+      <h4 class="empty-title">:( 404 Error</h4>
+      <p class="empty-subtitle">Sorry,  <span class="label"><?php echo $_SERVER["REQUEST_URI"]; ?></span> is not found。</p>
       <div class="empty-action">
-        <a href="javascript:window.history.back();" class="btn btn-primary">后退</a>
-        <a href="/" class="btn">返回首页</a>
+        <a href="javascript:window.history.back();" class="btn btn-primary">Back</a>
+        <a href="/" class="btn">Go homepage</a>
       </div>
     </div>
   </div>

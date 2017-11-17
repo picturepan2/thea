@@ -16,10 +16,10 @@
         </div>
         <h1 class="post-title"><?php the_title(); ?></h1>
         <div class="post-meta">
-          <time class="post-meta-date"><?php the_time('Y 年 n 月 j 日,  g:i A'); ?></time>
+          <time class="post-meta-date"><?php the_date('F j, Y'); ?> at <?php the_time('g:i a'); ?></time>
           <span class="divider-dot">·</span>
           <span class="post-meta-author"><?php the_author(); ?></span>
-          <?php edit_post_link('编辑', ' · ', ''); ?>
+          <?php edit_post_link('Edit', ' · ', ''); ?>
         </div>
       </header>
 
@@ -38,29 +38,6 @@
             echo '<a href="' . get_tag_link( $tag->term_id ) . '" class="label tag">' . $tag->name . '</a>';
           }
         ?>
-      </div>
-
-      <div class="post-like">
-        <a href="#like" class="btn btn-primary btn-lg">赞赏</a>
-        <div id="like" class="modal">
-          <a href="#thankyou" class="modal-overlay"></a>
-          <div class="modal-container">
-            <div class="modal-header">
-              <a href="#thankyou" class="btn btn-clear float-right"></a>
-              <div class="modal-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
-            </div>
-            <div class="modal-body">
-              <div class="columns">
-                <div class="column col-6">
-                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-wechat.png">
-                </div>
-                <div class="column col-6">
-                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-alipay.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="post-related">
@@ -86,7 +63,7 @@
     <?php endwhile; else: ?>
 
     <article class="post" id="post-error">
-      <p>抱歉，没有找到任何内容。</p>
+      <p>Nothing.</p>
     </article>
 
     <?php endif; ?>

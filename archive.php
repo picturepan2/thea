@@ -5,9 +5,9 @@
     <header class="meta-header">
       <h2 class="meta-title">
         <?php if (is_category()) { ?><?php single_cat_title(); ?>
-        <?php } elseif (is_day()) { ?><?php the_time('Y 年 n 月 j 日'); ?> 存档
-        <?php } elseif (is_month()) { ?><?php the_time('Y 年 n 月'); ?> 存档
-        <?php } elseif (is_year()) { ?><?php the_time('Y 年'); ?> 存档
+        <?php } elseif (is_day()) { ?><?php the_time('F j, Y'); ?> Archive
+        <?php } elseif (is_month()) { ?><?php the_time('F, Y'); ?> Archive
+        <?php } elseif (is_year()) { ?><?php the_time('Y'); ?> Archive
         <?php } elseif (is_tag()) { ?><?php single_tag_title(); ?>
         <?php } ?>
       </h2>
