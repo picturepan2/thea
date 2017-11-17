@@ -13,7 +13,7 @@
     </a>
   </div>
   <footer class="card-footer">
-    <time class="post-card-date"><?php the_date('F j, Y'); ?> at <?php the_time('g:i a'); ?></time>
+    <time class="post-card-date"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></time>
     <?php if (get_comments_number() != 0) : ?>
       <div class="post-card-comment float-right">
         <?php comments_popup_link( '', '1', '%', 'label label-secondary' ); ?>
