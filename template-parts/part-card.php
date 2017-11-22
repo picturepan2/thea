@@ -9,7 +9,6 @@
   <div class="card-header">
     <a class="card-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
       <h2 class="post-card-title"><?php the_title(); ?></h2>
-      <?php the_excerpt(); ?>
     </a>
   </div>
   <footer class="card-footer">
