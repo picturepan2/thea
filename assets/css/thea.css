@@ -438,3 +438,16 @@ a:focus {
   line-height: 0;
   text-align: center;
 }
+
+.post-ads-sidebar {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .post-ads-sidebar {
+    bottom: 1rem;
+    display: block;
+    position: fixed;
+    right: 1rem;
+  }
+}

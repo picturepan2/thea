@@ -25,6 +25,23 @@
       <div id="comments" class="post-comments">
         <?php comments_template(); ?>
       </div>
+
+      <div class="container">
+        <div class="ads post-ads post-ads-sidebar">
+          <div class="adsense">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- github-vertical-sm -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:120px;height:240px"
+                data-ad-client="ca-pub-2225124559530218"
+                data-ad-slot="5087273059"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+      </div>
+      
     </article>
 
     <?php endwhile; else: ?>
