@@ -11,6 +11,7 @@
         <?php } elseif (is_tag()) { ?><?php single_tag_title(); ?>
         <?php } ?>
       </h2>
+      <?php if (tag_description() || category_description()) { ?>
       <h3 class="meta-description">
         <?php if (is_tag() && tag_description()) { ?>
 				<?php echo tag_description(); ?>
@@ -18,6 +19,7 @@
 				<?php echo category_description(); ?>
 				<?php } ?>
       </h3>
+      <?php } ?>
     </header>
   </div>
 </div>
