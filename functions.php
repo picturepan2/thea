@@ -86,8 +86,8 @@ function annotation($content){
   if ( has_post_thumbnail( $post->ID ) ){
     $content = '<p>' . get_the_post_thumbnail( $post->ID ) . '</p>' . $content;
   }
-  $content .= '<p></p>';
-  $content .= '<p>&copy;2017 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a> | <a href="'.get_permalink().'#comments" title="'.get_the_title().' 的评论">添加评论</a></p>';
+  $content .= '<p><a href="https://partner.lizhi.io/msft/cp" target="_blank"><img src="http://livesino.net/wp-content/themes/thea/assets/img/office-lizhi.png" width="600" height="auto" /></a></p>';
+  $content .= '<p>&copy;2018 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
 	return $content;
 }
 add_filter('the_content_feed', 'annotation');
