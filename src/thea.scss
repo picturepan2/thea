@@ -52,6 +52,12 @@ a {
       }
     }
 
+    .active {
+      > a {
+        color: $primary-color;
+      }
+    }
+
     a {
       color: $font-color;
       font-weight: 700;

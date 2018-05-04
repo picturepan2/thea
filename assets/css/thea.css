@@ -45,6 +45,10 @@ a:focus {
   color: #0145dd;
 }
 
+.navbar .nav .active > a {
+  color: #0145dd;
+}
+
 .navbar .nav a {
   color: #414857;
   font-weight: 700;

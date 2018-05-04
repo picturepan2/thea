@@ -28,6 +28,7 @@
             <li class="nav-item "><a href="/tag/hardware/">设备</a></li>
             <li class="nav-item"><a href="/tag/xbox/">Xbox</a></li>
             <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
+            <li class="nav-item active"><a href="https://partner.lizhi.io/msft/cp" target="_blank">Office 2016最低价 164 元</a></li>
           </ul>
         </div>
         <div class="navbar-section">
