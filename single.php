@@ -29,6 +29,7 @@
 
       <div class="post-content">
         <?php the_content(); ?>
+        <p>直达：<a href="https://microsoft.pvxt.net/Zdoz" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件</a></p>
       </div>
 
       <div class="post-meta-tags">
@@ -41,22 +42,17 @@
       </div>
 
       <div class="post-like">
-        <a href="#like" class="btn btn-primary btn-lg">赞赏</a>
-        <div id="like" class="modal">
-          <a href="#thankyou" class="modal-overlay"></a>
-          <div class="modal-container">
-            <div class="modal-header">
-              <a href="#thankyou" class="btn btn-clear float-right"></a>
-              <div class="modal-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
-            </div>
-            <div class="modal-body">
-              <div class="columns">
-                <div class="column col-6">
-                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-wechat.png">
-                </div>
-                <div class="column col-6">
-                  <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-alipay.png">
-                </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
+          </div>
+          <div class="card-body">
+            <div class="columns">
+              <div class="column col-6">
+                <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-wechat.png">
+              </div>
+              <div class="column col-6">
+                <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/like-alipay.png">
               </div>
             </div>
           </div>

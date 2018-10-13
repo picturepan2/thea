@@ -323,8 +323,9 @@ a:focus {
   width: 100%;
 }
 
-.post .post-like .modal-body {
-  max-height: none;
+.post .post-like .card-body img {
+  margin: 0 auto;
+  max-height: 300px;
 }
 
 .post .post-meta-tags .tag {
@@ -441,6 +442,10 @@ a:focus {
 .thea-ad .adsense {
   line-height: 0;
   text-align: center;
+}
+
+.post-ads ins {
+  border: 0 !important;
 }
 
 .post-ads-sidebar {

@@ -325,8 +325,11 @@ a {
     text-align: center;
     width: 100%;
 
-    .modal-body {
-      max-height: none;
+    .card-body {
+      img {
+        margin: 0 auto;
+        max-height: 300px;
+      }
     }
   }
 
@@ -454,6 +457,12 @@ a {
   .adsense {
     line-height: 0;
     text-align: center;
+  }
+}
+
+.post-ads {
+  ins {
+    border: 0 !important;
   }
 }
 
