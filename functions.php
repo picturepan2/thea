@@ -86,8 +86,8 @@ function annotation($content){
   if ( has_post_thumbnail( $post->ID ) ){
     $content = '<p>' . get_the_post_thumbnail( $post->ID ) . '</p>' . $content;
   }
-  $content .= '<p><a href="https://partner.lizhi.io/msft/cp" target="_blank"><img src="http://livesino.net/wp-content/themes/thea/assets/img/office-lizhi.png" width="600" height="auto" /></a></p>';
-  $content .= '<p><a href="https://microsoft.pvxt.net/Zdoz" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件</a></p>';
+  $content .= '<p><a href="https://microsoft.pvxt.net/c/1246266/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城周年庆 - 购买 Surface、Xbox 和配件促销</a></p>';
+  //$content .= '<p><a href="https://microsoft.pvxt.net/Zdoz" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件</a></p>';
   $content .= '<p>&copy;2018 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
 	return $content;
 }
