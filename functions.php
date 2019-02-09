@@ -34,8 +34,9 @@ function remove_all_jp_css() {
   wp_deregister_style('widget-conditions'); // Widget Visibility
   wp_deregister_style('jetpack_display_posts_widget'); // Display Posts Widget
   wp_deregister_style('gravatar-profile-widget'); // Gravatar Widget
-  wp_deregister_style('widget-grid-and-list'); // Top Posts widget
+  wp_deregister_style('widget-grid-and-list'); // Top Posts Widget
   wp_deregister_style('jetpack-widgets'); // Widgets
+  wp_deregister_style('jetpack-widget-social-icons-styles'); // Jetpack Social
 }
 add_action('wp_print_styles', 'remove_all_jp_css' );
 
@@ -86,9 +87,8 @@ function annotation($content){
   if ( has_post_thumbnail( $post->ID ) ){
     $content = '<p>' . get_the_post_thumbnail( $post->ID ) . '</p>' . $content;
   }
-  $content .= '<p><a href="https://microsoft.pvxt.net/c/1246266/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城周年庆 - 购买 Surface、Xbox 和配件促销</a></p>';
-  //$content .= '<p><a href="https://microsoft.pvxt.net/Zdoz" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件</a></p>';
-  $content .= '<p>&copy;2018 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
+  $content .= '<p><a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件促销</a></p>';
+  $content .= '<p>&copy;2019 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
 	return $content;
 }
 add_filter('the_content_feed', 'annotation');
@@ -128,5 +128,4 @@ add_theme_support( 'post-thumbnails' );
 
 // Remove paragraph tag
 remove_filter( 'term_description', 'wpautop' );
-
 ?>
