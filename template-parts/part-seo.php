@@ -28,12 +28,16 @@
   $title = get_the_title() . ' | LiveSino 中文版, 微软资讯, 微软信仰中心';
   $description = wp_strip_all_tags( get_the_excerpt( $post->ID ), true );
   $url = get_permalink();
+  $image = get_the_post_thumbnail_url();
 ?>
 <meta name="keywords" content="<?php echo $tags; ?>" />
 <meta name="description" content="<?php echo $description; ?>" />
 <meta property="og:title" content="<?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $description; ?>" />
 <meta property="og:url" content="<?php echo $url; ?>" />
+<?php if( $image != "" ) { ?>
+<meta property="og:image" content="<?php echo $image; ?>" />
+<?php } ?>
 <link rel="canonical" href="<?php echo $url; ?>" />
 <?php } elseif (is_page()) { ?>
 <?php

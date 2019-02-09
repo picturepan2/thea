@@ -28,7 +28,7 @@
             <li class="nav-item"><a href="/">资讯</a></li>
             <li class="nav-item active"><a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软官方商店</a></li>
             <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
-            <li class="nav-item active"><a href="http://livesino.net/windows-apps" target="_blank">正版必备软件</a></li>
+            <li class="nav-item active"><a href="https://livesino.net/windows-apps" target="_blank">正版必备软件</a></li>
           </ul>
         </div>
         <div class="navbar-section"> 

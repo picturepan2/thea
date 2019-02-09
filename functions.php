@@ -88,7 +88,7 @@ function annotation($content){
     $content = '<p>' . get_the_post_thumbnail( $post->ID ) . '</p>' . $content;
   }
   $content .= '<p><a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件促销</a></p>';
-  $content .= '<p>&copy;2019 <a href="http://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
+  $content .= '<p>&copy;2019 <a href="https://livesino.net">LiveSino.net</a> | <a href="'.get_permalink().'" title="'.get_the_title().'">阅读原文</a>';
 	return $content;
 }
 add_filter('the_content_feed', 'annotation');
