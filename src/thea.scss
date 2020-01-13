@@ -454,6 +454,17 @@ a {
   background: $bg-color;
   padding: 1rem;
 
+  .banner {
+    text-align: center;
+    
+    img {
+      display: inline-block;
+      margin: 0 auto;
+      max-height: 8rem;
+      width: auto;
+    }
+  }
+
   .adsense {
     line-height: 0;
     text-align: center;

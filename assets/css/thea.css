@@ -439,6 +439,17 @@ a:focus {
   padding: 1rem;
 }
 
+.thea-ad .banner {
+  text-align: center;
+}
+
+.thea-ad .banner img {
+  display: inline-block;
+  margin: 0 auto;
+  max-height: 8rem;
+  width: auto;
+}
+
 .thea-ad .adsense {
   line-height: 0;
   text-align: center;

@@ -15,7 +15,7 @@
       </header>
 
       <div class="post-image">
-        <?php echo get_the_post_thumbnail(); ?>
+        <?php the_post_thumbnail('thumbnail', ['alt' => get_the_title(), 'loading' => 'lazy']); ?>
       </div>
 
       <div class="post-content">

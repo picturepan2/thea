@@ -32,6 +32,34 @@
         <p>直达：<a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城周年庆 - 购买 Surface、Xbox 和配件促销</a></p>
       </div>
 
+      <div class="post-like">
+        <div class="container">
+          <div class="adsense">
+            <div class="hide-md">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- GitHub-lg -->
+              <ins class="adsbygoogle"
+                    style="display:inline-block;width:728px;height:90px"
+                    data-ad-client="ca-pub-2225124559530218"
+                    data-ad-slot="9894180784"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <div class="show-md">
+              <!-- GitHub-sm -->
+              <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-2225124559530218"
+                    data-ad-slot="9278881734"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="post-meta-tags">
         <?php 
           $tags = get_the_tags();
@@ -41,7 +69,7 @@
         ?>
       </div>
 
-      <div class="post-like">
+      <!-- <div class="post-like">
         <div class="card">
           <div class="card-header">
             <div class="card-title h5">谢谢赞赏 <span class="text-error">&hearts;</span></div>
@@ -57,7 +85,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="post-related">
         <div class="ads post-ads right pr">
