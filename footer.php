@@ -18,7 +18,7 @@
           <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
         </select>
       </nav>
-      <section class="copyright">&copy; 2007 - 2019 <?php bloginfo( 'name' ); ?> 保留一切权利</section>
+      <section class="copyright">&copy; 2007 - 2020 <?php bloginfo( 'name' ); ?> 保留一切权利</section>
       <section class="copyright">Proudly published with <a href="https://wordpress.org/" target="_blank">WordPress</a>. Theme <a href="https://github.com/picturepan2/thea" target="_blank">Thea</a> made with <span class="text-error">&hearts;</span>. </section>
       <?php if ( is_user_logged_in() ) {?><section class="copyright"><?php echo get_num_queries(); ?> Queries, <?php timer_stop(1); ?> Seconds</section><?php } ?>
     </div>
