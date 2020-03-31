@@ -12,6 +12,8 @@
         <a href="/about">广告合作</a>
         <span class="divider-dot">·</span>
         <a href="/links">友链</a>
+        <span class="divider-dot">·</span>
+        <a href="https://rework.tools" target="_blank">Rework.tools 导航</a>
       </nav>
       <nav class="footer-nav">
         <select class="form-select select-sm select-inline" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
