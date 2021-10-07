@@ -25,7 +25,7 @@
         </div>
         <div class="navbar-center hide-sm">
           <ul class="nav">
-            <li class="nav-item active"><a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软官方商店</a></li>
+            <li class="nav-item active"><a href="https://c.duomai.com/track.php?site_id=264191&aid=2649&euid=&t=https%3A%2F%2Fwww.microsoftstore.com.cn&dm_fid=16052" target="_blank">微软官方商店</a></li>
             <li class="nav-item"><a href="/tag/deals/">值得买</a></li>
             <li class="nav-item"><a href="https://rework.tools" target="_blank">Rework.tools 导航</a></li>
             <li class="nav-item"><a href="https://surface.wiki/" target="_blank">Surface</a></li>

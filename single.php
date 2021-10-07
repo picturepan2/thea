@@ -29,7 +29,7 @@
 
       <div class="post-content">
         <?php the_content(); ?>
-        <p>直达：<a href="https://microsoft.pvxt.net/c/1272791/439031/7808?subId1=livesino&u=https://www.microsoftstore.com.cn" target="_blank">微软中国官方商城周年庆 - 购买 Surface、Xbox 和配件促销</a></p>
+        <p>直达：<a href="https://c.duomai.com/track.php?site_id=264191&aid=2649&euid=&t=https%3A%2F%2Fwww.microsoftstore.com.cn&dm_fid=16052" target="_blank">微软中国官方商城 - 购买 Surface、Xbox 和配件促销</a></p>
       </div>
 
       <div class="post-like">

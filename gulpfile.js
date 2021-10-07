@@ -5,13 +5,14 @@ var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('watch', function() {
-  gulp.watch('./**/*.scss', ['build']);
-});
+var paths = {
+  scss: './scss/*.scss'
+};
 
-gulp.task('build', function() {
-  gulp.src("src/*.scss")
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+function css() {
+  return gulp
+    .src(paths.scss)
+    .pipe(sass({outputStyle: 'compact', precision: 2})
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
@@ -22,6 +23,12 @@ gulp.task('build', function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./assets/css'));
-});
+}
 
-gulp.task('default', ['build']);
+function watch() {
+  gulp.watch('./**/*.scss', css);
+}
+
+exports.watch = watch;
+exports.css = css;
+exports.default = css;
