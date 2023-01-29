@@ -2,18 +2,18 @@
   <div class="container">
     <div class="columns">
       <div class="column col-4 col-md-6 col-sm-12">
-        <a href="https://c.duomai.com/track.php?k=3byNWat5yd3dnRyUiRyUSQzUycwRHdo1Ddm0DZpVXZmkDN2ITPklWYmcDM1AzMy0DZp9VZ0l2cmYCNxYjMjlWbGJTJwZkMl8mcw1SZjFmZyV3cGJTJlNWYmJXdzZkMl42Yu02bj5SZy9GdzRnZvN" target="_blank">
-          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ms-surface-pro-7.jpg">
+        <a href="https://tb.j5k6.com/1oOPM" target="_blank">
+          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/surface-pro-9.jpg">
         </a>
       </div>
       <div class="column col-4 col-md-6 col-sm-12">
-        <a href="https://c.duomai.com/track.php?k=nZvN3byNWat5yd3dnRyUiRyUSQzUycwRHdo1Ddm0DZpVXZmkDN2ITPklWYmcDM1AzMy0DZp9VZ0l2cmYiJzIjNyMWatZkMlAnRyUyMtA3b0BXYs1SZjFmZyV3cGJTJlNWYmJXdzZkMl42Yu02bj5SZy9GdzR" target="_blank">
-          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ms-surface-laptop-3.jpg">
+        <a href="https://tb.j5k6.com/1oONQ" target="_blank">
+          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/surface-laptop-5.jpg">
         </a>
       </div>
       <div class="column col-4 col-md-6 col-sm-12">
-        <a href="https://c.duomai.com/track.php?k=3byNWat5yd3dnRyUiRyUSQzUycwRHdo1Ddm0DZpVXZmkDN2ITPklWYmETOxQjNy0DZp9VZ0l2cmkjM3IzYp1mRyUCcGJTJy0ybn1SZjFmZyV3cGJTJlNWYmJXdzZkMl42Yu02bj5SZy9GdzRnZvN" target="_blank">
-          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ms-surface-go-2.jpg">
+        <a href="https://tb.j5k6.com/1oOLF" target="_blank">
+          <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/surface-refurbished.jpg">
         </a>
       </div>
     </div>
